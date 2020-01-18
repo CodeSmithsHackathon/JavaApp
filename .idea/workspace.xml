@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/LoginPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/PopoutPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codesmiths/resources/popout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/EmailPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Priority/PriorityEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/structures/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/EmailPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/EmailPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/LoginPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/LoginPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/OuterPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/pane/OuterPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/structures/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/structures/Email.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/LoginPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/LoginPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/priority/PriorityEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/structures/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/structures/Email.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
