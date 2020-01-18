@@ -1,5 +1,3 @@
-package com.codesmiths.mongoDB;
-
 import com.codesmiths.priority.Priority;
 import com.codesmiths.structures.Email;
 
@@ -10,13 +8,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
+
 public class MongoDBConnector {
     // Returns list of emails from MongoDB
     public static List<Email> getHackathonData() {
         // Temporary data pulled from a capture of the endpoint
         ArrayList<Email> emails = new ArrayList<Email>();
 
-        String csvFile = "result.csv";
+        String csvFile = (System.getenv("USERPROFILE") + "\\Documents\\GitHub\\JavaApp\\mongo.csv");
         String line = "";
         String cvsSplitBy = ",";
 
@@ -38,7 +38,7 @@ public class MongoDBConnector {
 
     // Tells MongoDB to update the data from the endpoint
     public static void updateHackathonData() {
-
+        Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py")
     }
 
     public static boolean authenticateUser(String username, String password) {
@@ -46,5 +46,9 @@ public class MongoDBConnector {
         // Connect the MongoDB and authenticate user
         System.out.println("Username:" + username + "\nPassword: " + password);
         return true;
+    }
+
+    public static Object connectToMongo(){
+        MongoClient =
     }
 }

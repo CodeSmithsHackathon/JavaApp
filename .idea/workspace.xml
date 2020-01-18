@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/LoginPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/EmailPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Priority/PriorityEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/structures/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/priority/PriorityEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/EmailRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/EmailRetriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/PriorityCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/PriorityCalculator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +66,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -107,6 +102,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -129,37 +125,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
-    </configuration>
+  <component name="RunManager" selected="Python.EmailRetriever">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.codesmiths.Main" />
-      <module name="JavaApp" />
-      <option name="VM_PARAMETERS" value="-p C:\Users\Will\Desktop\Hackathon\JavaApp\javafx\lib --add-modules javafx.controls" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +137,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -192,6 +168,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -201,6 +181,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.codesmiths.Main" />
+      <module name="JavaApp" />
+      <option name="VM_PARAMETERS" value="-p C:\Users\Will\Desktop\Hackathon\JavaApp\javafx\lib --add-modules javafx.controls" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailRetriever" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="JavaApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/codesmiths/resources/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/EmailRetriever.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PriorityCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="JavaApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/codesmiths/resources/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/codesmiths/resources/scripts/PriorityCalculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.EmailRetriever" />
+        <item itemvalue="Python.PriorityCalculator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -213,11 +259,20 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1579366133473" duration="5409000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated EmailRetriever, Added PriorityCalculator, attempt #2">
+      <created>1579366411088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579366411088</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1302000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -231,10 +286,31 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="Updated EmailRetriever, Added PriorityCalculator, attempt #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated EmailRetriever, Added PriorityCalculator, attempt #2" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaApp$EmailRetriever.coverage" NAME="EmailRetriever Coverage Results" MODIFIED="1579372784838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/codesmiths/resources/scripts" />
+    <SUITE FILE_PATH="coverage/JavaApp$PriorityCalculator.coverage" NAME="PriorityCalculator Coverage Results" MODIFIED="1579368133445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/codesmiths/resources/scripts" />
   </component>
 </project>
