@@ -18,10 +18,16 @@ public class EmailPane extends Pane {
 
         for(int i = 0; i < limit; i++) {
             FlowPane fp = new FlowPane();
-            fp.setPadding(new Insets(10, 10, 10, 10));
             Email e = data.get(i);
-            fp.getChildren().add(new ImageView(e.getPriority().getImage()));
-            fp.getChildren().add(new Text(e.getSender()));
+            ImageView iv = new ImageView(e.getPriority().getImage());
+            Text sender = new Text("  " + e.getSender());
+            Text subject = new Text(e.getSubject().length() > 100 ? e.getSubject().substring(0, 100) + "..." : e.getSubject());
+
+            fp.setHgap(15);
+            sender.setWrappingWidth(250);
+            subject.setWrappingWidth(350);
+            fp.getChildren().addAll(iv, sender, subject);
+            fp.setPadding(new Insets(10, 0, 10, 10));
             pane.getChildren().add(fp);
         }
         return pane;
