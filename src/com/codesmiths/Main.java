@@ -4,6 +4,7 @@ import com.codesmiths.mongoDB.MongoDBConnector;
 import com.codesmiths.priority.Priority;
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -12,6 +13,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -32,7 +34,7 @@ public class Main extends Application {
 
         priority.setWrappingWidth(90);
         sender.setWrappingWidth(300);
-        emailList.setWrappingWidth(540);
+        header.setAlignment(Pos.CENTER);
         priority.setUnderline(true);
         sender.setUnderline(true);
         subject.setUnderline(true);
@@ -49,7 +51,7 @@ public class Main extends Application {
         primaryStage.setTitle("Possibly Malicious Emails");
         primaryStage.setScene(new Scene(outer, 800, 775));
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image("com/codesmiths/resources/icon.png"));
+        //primaryStage.getIcons().add(new Image("com/codesmiths/resources/icon.png"));
         primaryStage.show();
     }
 
