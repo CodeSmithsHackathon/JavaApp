@@ -6,7 +6,13 @@ import com.codesmiths.structures.Email;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -31,9 +37,7 @@ public class MongoDBConnector {
                 emails.add(e);
             }
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException e) { }
 
         return emails;
     }
@@ -44,13 +48,27 @@ public class MongoDBConnector {
     }
 
     public static boolean authenticateUser(String username, String password) {
-        // Hash and salt password
         // Connect the MongoDB and authenticate user
-        System.out.println("Username:" + username + "\nPassword: " + password);
+        System.out.println("Username:" + username + "\nPassword: " + hashPassword(password));
         return true;
     }
 
-    public static Object connectToMongo(){
-        MongoClient =
+    private static String hashPassword(String password) {
+        MessageDigest md = null;
+        String hashed = "";
+
+        try {
+            SecureRandom random = new SecureRandom();
+            byte[] salt = new byte[16];
+
+            md = MessageDigest.getInstance("SHA-512");
+            random.nextBytes(salt);
+            md.update(salt);
+
+            byte[] passwd = md.digest(password.getBytes(StandardCharsets.UTF_8));
+
+            hashed = new String(passwd, "UTF-8");
+        } catch (Exception e) { }
+        return hashed;
     }
 }

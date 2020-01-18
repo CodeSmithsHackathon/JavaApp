@@ -69,6 +69,6 @@ public class OuterPane {
         pane = EmailPane.getPane(MongoDBConnector.getHackathonData(), Main.LIMIT);
         outer.getChildren().remove(2);
         outer.getChildren().add(pane);
-        System.out.println("Email list reset");
+        System.out.println("Email list refreshed");
     }
 }

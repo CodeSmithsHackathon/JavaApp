@@ -14,11 +14,11 @@ public class Email {
     private Priority priority;
 
     public Email(String sender, String recipient, String subject, String body, String attachments, Date sendDate, Priority priority) {
-        this.setSender(sender);
-        this.setRecipient(recipient);
-        this.setSubject(subject);
-        this.setBody(body);
-        this.setAttachments(attachments);
+        this.setSender(sender.substring(1, sender.length() - 1));
+        this.setRecipient(recipient.substring(1, recipient.length() - 1));
+        this.setSubject(subject.substring(1, subject.length() - 1));
+        this.setBody(body.substring(1, body.length() - 1));
+        this.setAttachments(attachments.substring(1, attachments.length() - 1));
         this.setSendDate(sendDate);
         this.setPriority(priority);
     }

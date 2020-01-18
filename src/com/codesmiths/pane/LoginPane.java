@@ -64,7 +64,7 @@ public class LoginPane {
     private static void attemptLogin(Stage stage, Pane failedPane, String username, String password) {
         if (MongoDBConnector.authenticateUser(username, password)) {
             stage.setTitle("Possibly Malicious Emails");
-            stage.setScene(new Scene(OuterPane.getPane(), 725, 575));
+            stage.setScene(new Scene(OuterPane.getPane(), 750, 575));
             System.out.println("Login successful");
         } else {
             failedPane.setVisible(true);
