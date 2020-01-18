@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class EmailPane extends Pane {
-    public static Pane getPane(List<Email> data, int limit) {
+    public static VBox getPane(List<Email> data, int limit) {
         VBox pane = new VBox();
 
         if (limit > data.size())
@@ -42,7 +42,7 @@ public class EmailPane extends Pane {
                     Stage stage = new Stage();
                     stage.setTitle(e.getSender());
                     stage.setResizable(false);
-                    stage.setScene(new Scene(PopoutPane.getPane(e), 450, 375));
+                    stage.setScene(new Scene(PopoutPane.getPane(e), 450, 350));
                     stage.getIcons().add(new Image("com/codesmiths/resources/icon.png"));
                     stage.show();
                 }
