@@ -1,11 +1,24 @@
 import requests
 import json
 from pymongo import MongoClient
+import csv
+from bson import json_util
+import os
+import pandas as pd
 
 
 def main():
     collection = connectToMongo("admin", "GEHackathon1")
     refreshMongo(collection)
+    cursor = collection.find({})
+
+    df = pd.DataFrame(list(cursor))
+    if '_id' in df:
+        del df['_id']
+
+    df.to_csv(os.environ["USERPROFILE"] + r"\Documents\GitHub\JavaApp\mongo.csv", index=False)
+
+
 
 
 def refreshMongo(collection):

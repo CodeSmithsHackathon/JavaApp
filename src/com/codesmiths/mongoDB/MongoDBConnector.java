@@ -44,7 +44,11 @@ public class MongoDBConnector {
 
     // Tells MongoDB to update the data from the endpoint
     public static void updateHackathonData() {
-        Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py")
+        try {
+            Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static boolean authenticateUser(String username, String password) {
