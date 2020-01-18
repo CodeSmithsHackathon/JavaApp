@@ -1,4 +1,4 @@
-package sample;
+package com.codesmiths;
 
 import java.util.Date;
 

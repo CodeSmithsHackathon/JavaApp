@@ -1,4 +1,6 @@
-package sample;
+package com.codesmiths.MongoDB;
+
+import com.codesmiths.Email;
 
 import java.util.ArrayList;
 

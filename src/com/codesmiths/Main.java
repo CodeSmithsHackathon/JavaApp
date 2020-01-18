@@ -1,8 +1,8 @@
-package sample;
+package com.codesmiths;
 
+import com.codesmiths.MongoDB.MongoDBConnector;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class Main extends Application {
         data.add(new Email("test1", "test1", "test1", "test1", "test1.txt", new Date()));
 
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(new Pane(), 300, 275));
+        primaryStage.setScene(new Scene(EmailPane.getPane(data, 25), 300, 275));
         primaryStage.show();
     }
 
