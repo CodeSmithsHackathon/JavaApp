@@ -5,7 +5,6 @@ from pymongo import MongoClient
 
 def main():
     collection = connectToMongo("admin", "GEHackathon1")
-
     refreshMongo(collection)
 
 
@@ -19,6 +18,11 @@ def refreshMongo(collection):
     emails = response_dict["data"]
 
     for email in emails:
+
+        times = email['sendDate'].split()
+        if len(times) == 2:
+            email["sendTime"] = times[1]
+            email["sendDate"] = times[0]
         collection.insert_one(email)
 
 
