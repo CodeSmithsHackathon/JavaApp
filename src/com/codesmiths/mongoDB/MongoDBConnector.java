@@ -24,7 +24,7 @@ public class MongoDBConnector {
         // Temporary data pulled from a capture of the endpoint
         ArrayList<Email> emails = new ArrayList<Email>();
 
-        String csvFile = (System.getenv("USERPROFILE") + "\\Documents\\GitHub\\JavaApp\\mongo.csv");
+        String csvFile = (System.getenv("USERPROFILE") + "\\Desktop\\Hackathon\\JavaApp\\mongo.csv");
         String line = "";
         String cvsSplitBy = ",";
 
@@ -44,11 +44,12 @@ public class MongoDBConnector {
 
     // Tells MongoDB to update the data from the endpoint
     public static void updateHackathonData() {
+        /*
         try {
             Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py");
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public static boolean authenticateUser(String username, String password) {
