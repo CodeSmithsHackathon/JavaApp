@@ -16,13 +16,15 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+
+
 public class MongoDBConnector {
     // Returns list of emails from MongoDB
     public static List<Email> getHackathonData() {
         // Temporary data pulled from a capture of the endpoint
         ArrayList<Email> emails = new ArrayList<Email>();
 
-        String csvFile = "result.csv";
+        String csvFile = (System.getenv("USERPROFILE") + "\\Documents\\GitHub\\JavaApp\\mongo.csv");
         String line = "";
         String cvsSplitBy = ",";
 
@@ -42,7 +44,7 @@ public class MongoDBConnector {
 
     // Tells MongoDB to update the data from the endpoint
     public static void updateHackathonData() {
-
+        Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py")
     }
 
     public static boolean authenticateUser(String username, String password) {
