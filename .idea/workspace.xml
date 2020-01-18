@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/LoginPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/sample/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/sample/EmailPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/sample/MongoDBConnector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/EmailPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/EmailPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/EmailPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/MongoDB/MongoDBConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaApp/com/codesmiths/Priority/PriorityEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/structures/Email.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Priority/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Priority/Priority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/Priority/PriorityEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/Priority/PriorityEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/mongoDB/MongoDBConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/EmailPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codesmiths/pane/OuterPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codesmiths/priority/PriorityEngine.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +70,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,11 +85,14 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1WXwYrgDazCFDLjAUJjhwnLqWqS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -95,7 +102,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javafx/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -103,8 +110,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp\resources\priority" />
       <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp" />
+      <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp\src" />
+      <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp\src\com\codesmiths\resources\priority" />
+      <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp\src\com\codesmiths\resources\scripts" />
+      <recent name="C:\Users\Will\Desktop\Hackathon\JavaApp\resources\priority" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,10 +151,10 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.codesmiths.Main" />
       <module name="JavaApp" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\Will\Downloads\javafx-sdk-11.0.2\lib" />
+      <option name="VM_PARAMETERS" value="-p C:\Users\Will\Desktop\Hackathon\JavaApp\javafx\lib --add-modules javafx.controls" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codesmiths.Priority.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,7 +224,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -222,6 +234,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
 </project>
