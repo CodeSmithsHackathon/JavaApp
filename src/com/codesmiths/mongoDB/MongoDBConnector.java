@@ -11,6 +11,8 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -32,7 +34,11 @@ public class MongoDBConnector {
 
             while ((line = br.readLine()) != null) {
                 String[] email = line.split(cvsSplitBy);
-                Email e = new Email(email[5], email[1], email[0], email[2], email[4], new Date(), Priority.LOW);
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                Email e = null;
+                try {
+                    e = new Email(email[5], email[1], email[0], email[2], email[4], sdf.parse(email[3]), Priority.LOW);
+                } catch (ParseException ex) { }
 
                 emails.add(e);
             }
@@ -44,12 +50,11 @@ public class MongoDBConnector {
 
     // Tells MongoDB to update the data from the endpoint
     public static void updateHackathonData() {
-        /*
         try {
             Runtime.getRuntime().exec("python resources/scripts/EmailRetriever.py");
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
     public static boolean authenticateUser(String username, String password) {

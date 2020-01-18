@@ -11,11 +11,14 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
+import java.text.SimpleDateFormat;
+
 public class PopoutPane {
     public static Pane getPane(Email e) {
         GridPane pane = new GridPane();
         FlowPane fp = new FlowPane(), fsender = new FlowPane(), frecipient = new FlowPane(), fsubject = new FlowPane(), fbody = new FlowPane(), fsendDate = new FlowPane(), fattachments = new FlowPane(), buttons = new FlowPane();
         Insets i = new Insets(0, 0, 0,10);
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 
         Text information = new Text("Information");
         Text sender = new Text("Sender:"), subject = new Text("Subject:"), recipient = new Text("Recipient:"), body = new Text("Body:"), sendDate = new Text("Send Date:"), attachments = new Text("Attachments:");
@@ -24,7 +27,7 @@ public class PopoutPane {
         Text tSubject = new Text(e.getSubject());
         Text tRecipient = new Text(e.getRecipient());
         Text tBody = new Text(e.getBody());
-        Text tSendDate = new Text(e.getSendDate().toString());
+        Text tSendDate = new Text(sdf.format(e.getSendDate()));
         Text tAttachments = new Text(e.getAttachments());
 
         Button blockSender = new Button("Block sender"), blockDomain = new Button("Block " + e.getSender().substring(e.getSender().indexOf('@') + 1)), remove = new Button("Remove"), release = new Button("Release");
@@ -108,7 +111,7 @@ public class PopoutPane {
         pane.addRow(7, buttons);
 
         return pane;
-    }
+}
 
     private static void blockSender(Email e) {
         // Add a record to the blocked senders table
