@@ -1,5 +1,7 @@
 package com.codesmiths;
 
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -15,8 +17,10 @@ public class EmailPane extends Pane {
             limit = data.size();
 
         for(int i = 0; i < limit; i++) {
+            FlowPane fp = new FlowPane();
             Email e = data.get(i);
-
+            fp.getChildren().add(new ImageView(e.getPriority().getImage()));
+            fp.getChildren().add(new Text(e.getSender()));
         }
         return pane;
     }

@@ -1,5 +1,7 @@
 package com.codesmiths;
 
+import com.codesmiths.Priority.Priority;
+
 import java.util.Date;
 
 public class Email {
@@ -9,14 +11,16 @@ public class Email {
     private String body;
     private String attachments;
     private Date sendDate;
+    private Priority priority;
 
-    public Email(String sender, String recipient, String subject, String body, String attachments, Date sendDate) {
+    public Email(String sender, String recipient, String subject, String body, String attachments, Date sendDate, Priority priority) {
         this.setSender(sender);
         this.setRecipient(recipient);
         this.setSubject(subject);
         this.setBody(body);
         this.setAttachments(attachments);
         this.setSendDate(sendDate);
+        this.setPriority(priority);
     }
 
     public String getSender() {
@@ -65,5 +69,13 @@ public class Email {
 
     public void setSendDate(Date sendDate) {
         this.sendDate = sendDate;
+    }
+
+    public Priority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
     }
 }
