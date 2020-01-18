@@ -1,3 +1,5 @@
+package com.codesmiths.mongoDB;
+
 import com.codesmiths.priority.Priority;
 import com.codesmiths.structures.Email;
 
