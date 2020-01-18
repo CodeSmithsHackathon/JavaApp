@@ -1,6 +1,6 @@
 package com.codesmiths;
 
-import com.codesmiths.Priority.Priority;
+import com.codesmiths.priority.Priority;
 
 import java.util.Date;
 

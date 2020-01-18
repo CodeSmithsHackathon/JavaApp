@@ -1,7 +1,7 @@
 package com.codesmiths;
 
-import com.codesmiths.MongoDB.MongoDBConnector;
-import com.codesmiths.Priority.Priority;
+import com.codesmiths.mongoDB.MongoDBConnector;
+import com.codesmiths.priority.Priority;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
