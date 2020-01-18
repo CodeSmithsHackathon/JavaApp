@@ -3,9 +3,9 @@ package com.codesmiths.Priority;
 import javafx.scene.image.Image;
 
 public enum Priority {
-    LOW(new Image("low.png")),
-    MEDIUM(new Image("medium.png")),
-    HIGH(new Image("high.png"));
+    LOW(new Image("com/codesmiths/resources/priority/low.png")),
+    MEDIUM(new Image("com/codesmiths/resources/priority/medium.png")),
+    HIGH(new Image("com/codesmiths/resources/priority/high.png"));
 
     private Image img;
 
