@@ -1,6 +1,6 @@
 package com.codesmiths.pane;
 
-import com.codesmiths.Email;
+import com.codesmiths.structures.Email;
 import javafx.geometry.Insets;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.FlowPane;

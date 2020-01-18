@@ -1,4 +1,4 @@
-package com.codesmiths;
+package com.codesmiths.structures;
 
 import com.codesmiths.priority.Priority;
 
@@ -13,13 +13,14 @@ public class Email {
     private Date sendDate;
     private Priority priority;
 
-    public Email(String sender, String recipient, String subject, String body, String attachments, Date sendDate) {
+    public Email(String sender, String recipient, String subject, String body, String attachments, Date sendDate, Priority priority) {
         this.setSender(sender);
         this.setRecipient(recipient);
         this.setSubject(subject);
         this.setBody(body);
         this.setAttachments(attachments);
         this.setSendDate(sendDate);
+        this.setPriority(priority);
     }
 
     public String getSender() {
